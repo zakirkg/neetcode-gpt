@@ -5,7 +5,6 @@ class Solution:
         # Update rule:        x = x - learning_rate * f'(x)
         # Round final answer to 5 decimal places
         x = init
-        while (iterations > 0):
-            iterations -= 1
-            x = x - (learning_rate) * (2 * x)
+        for _ in range(iterations):
+            x = x - learning_rate * 2 * x
         return round(x, 5)
