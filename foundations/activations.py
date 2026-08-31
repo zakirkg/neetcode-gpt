@@ -15,4 +15,4 @@ class Solution:
         # z is a 1D NumPy array
         # Formula: max(0, z) element-wise
         relu = np.maximum(0, z)
-        return np.round(relu, 5)
+        return relu
